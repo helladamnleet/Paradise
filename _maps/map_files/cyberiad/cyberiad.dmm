@@ -31335,8 +31335,8 @@
 	},
 /obj/effect/spawner/window/reinforced,
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /obj/machinery/status_display{
 	density = 0;
@@ -31386,8 +31386,8 @@
 	},
 /obj/effect/spawner/window/reinforced,
 /obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /obj/structure/cable{
 	d1 = 2;
@@ -70805,11 +70805,6 @@
 	},
 /area/toxins/xenobiology)
 "cGC" = (
-/obj/machinery/alarm{
-	dir = 1;
-	icon_state = "alarm0";
-	pixel_y = -22
-	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
@@ -71958,7 +71953,8 @@
 	},
 /area/toxins/misc_lab)
 "cIG" = (
-/obj/machinery/light,
+/obj/structure/spacepoddoor,
+/obj/structure/spacepoddoor,
 /turf/simulated/floor/engine,
 /area/engine/mechanic_workshop)
 "cIH" = (
@@ -71974,28 +71970,25 @@
 /area/toxins/misc_lab)
 "cII" = (
 /obj/structure/spacepoddoor,
-/obj/machinery/door/poddoor/multi_tile/three_tile_ver{
-	id_tag = "mechpodbayouter";
-	req_access_txt = "70"
-	},
+/obj/structure/spacepoddoor,
+/obj/structure/spacepoddoor,
 /turf/simulated/floor/engine,
 /area/engine/mechanic_workshop)
 "cIJ" = (
-/obj/structure/spacepoddoor,
-/obj/machinery/door/poddoor/multi_tile/three_tile_ver{
-	id_tag = "mechpodbay";
-	req_access_txt = "70"
+/obj/effect/decal/warning_stripes/yellow,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	tag = ""
 	},
 /turf/simulated/floor/engine,
 /area/engine/mechanic_workshop)
 "cIK" = (
-/obj/machinery/door_control{
-	desc = "A remote control-switch for the pod doors.";
-	id = "mechpodbay";
-	name = "Pod Door Control";
-	pixel_x = 0;
-	pixel_y = -24;
-	req_access_txt = "70"
+/obj/structure/spacepoddoor,
+/obj/structure/spacepoddoor,
+/obj/machinery/door/poddoor/multi_tile/four_tile_ver{
+	id_tag = "mechpodbayouter"
 	},
 /turf/simulated/floor/engine,
 /area/engine/mechanic_workshop)
@@ -72007,14 +72000,7 @@
 	},
 /area/toxins/xenobiology)
 "cIM" = (
-/obj/machinery/door_control{
-	desc = "A remote control-switch for the pod doors.";
-	id = "mechpodbayouter";
-	name = "Pod Door Control";
-	pixel_x = 0;
-	pixel_y = -24;
-	req_access_txt = "70"
-	},
+/obj/machinery/light,
 /turf/simulated/floor/engine,
 /area/engine/mechanic_workshop)
 "cIN" = (
@@ -72326,11 +72312,14 @@
 "cJn" = (
 /obj/structure/cable{
 	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4";
+	d2 = 2;
+	icon_state = "1-2";
 	tag = ""
 	},
-/obj/effect/decal/warning_stripes/north,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cJo" = (
@@ -72672,8 +72661,11 @@
 /turf/simulated/floor/engine,
 /area/toxins/misc_lab)
 "cJS" = (
-/obj/structure/grille,
-/turf/simulated/floor/plating/airless,
+/obj/structure/spacepoddoor,
+/obj/machinery/door/poddoor/multi_tile/four_tile_ver{
+	id_tag = "mechpodbay"
+	},
+/turf/simulated/floor/engine,
 /area/engine/mechanic_workshop)
 "cJT" = (
 /obj/machinery/door/poddoor{
@@ -72694,13 +72686,15 @@
 /turf/simulated/floor/engine,
 /area/toxins/misc_lab)
 "cJU" = (
-/obj/structure/grille,
-/obj/structure/sign/securearea{
-	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
-	name = "KEEP CLEAR: DOCKING AREA";
-	pixel_y = 0
+/obj/machinery/door_control{
+	desc = "A remote control-switch for the pod doors.";
+	id = "mechpodbayouter";
+	name = "Pod Door Control";
+	pixel_x = 0;
+	pixel_y = -24;
+	req_access_txt = "70"
 	},
-/turf/simulated/floor/plating/airless,
+/turf/simulated/floor/engine,
 /area/engine/mechanic_workshop)
 "cJV" = (
 /turf/simulated/floor/plasteel,
@@ -72743,13 +72737,16 @@
 /turf/simulated/wall,
 /area/hallway/primary/aft)
 "cKa" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Mechanic Workshop Maintenance";
-	req_access = null;
+/obj/machinery/door_control{
+	desc = "A remote control-switch for the pod doors.";
+	id = "mechpodbay";
+	name = "Pod Door Control";
+	pixel_x = 0;
+	pixel_y = -24;
 	req_access_txt = "70"
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/aft)
+/turf/simulated/floor/engine,
+/area/engine/mechanic_workshop)
 "cKb" = (
 /turf/simulated/wall,
 /area/assembly/assembly_line)
@@ -73408,13 +73405,14 @@
 /turf/simulated/floor/engine,
 /area/toxins/test_chamber)
 "cLm" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+/obj/structure/grille,
+/obj/structure/sign/securearea{
+	desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'.";
+	name = "KEEP CLEAR: DOCKING AREA";
+	pixel_y = 0
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/aft)
+/turf/simulated/floor/plating/airless,
+/area/engine/mechanic_workshop)
 "cLn" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -73430,25 +73428,17 @@
 /turf/simulated/floor/plating,
 /area/assembly/assembly_line)
 "cLo" = (
-/obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
-	icon_state = "2-8";
-	tag = ""
+/obj/machinery/door/airlock/maintenance{
+	name = "Mechanic Workshop Maintenance";
+	req_access = null;
+	req_access_txt = "70"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cLp" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/aft)
+/obj/structure/grille,
+/turf/simulated/floor/plating/airless,
+/area/engine/mechanic_workshop)
 "cLq" = (
 /obj/structure/table,
 /obj/structure/sign/poster/contraband/random{
@@ -73923,19 +73913,22 @@
 "cMq" = (
 /obj/structure/cable{
 	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
+	d2 = 4;
+	icon_state = "1-4";
 	tag = ""
 	},
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
+/obj/effect/decal/warning_stripes/north,
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cMr" = (
-/obj/structure/table,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cMs" = (
@@ -73964,9 +73957,9 @@
 /area/toxins/test_chamber)
 "cMv" = (
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2";
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
 	tag = ""
 	},
 /turf/simulated/floor/plating,
@@ -74529,19 +74522,21 @@
 /turf/simulated/floor/engine,
 /area/toxins/test_chamber)
 "cNA" = (
-/obj/structure/closet/firecloset,
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cNB" = (
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cNC" = (
-/obj/structure/closet,
-/obj/effect/spawner/lootdrop/maintenance,
+/obj/structure/closet/firecloset,
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cND" = (
 /obj/structure/table,
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cNE" = (
@@ -74647,8 +74642,8 @@
 "cNN" = (
 /obj/structure/cable{
 	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4";
+	d2 = 2;
+	icon_state = "1-2";
 	tag = ""
 	},
 /turf/simulated/floor/plating,
@@ -74982,8 +74977,13 @@
 /turf/simulated/floor/engine,
 /area/toxins/test_chamber)
 "cOw" = (
-/obj/effect/spawner/window/reinforced,
-/turf/simulated/wall,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4";
+	tag = ""
+	},
+/turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cOx" = (
 /obj/effect/spawner/window/reinforced,
@@ -75488,7 +75488,8 @@
 	},
 /area/toxins/xenobiology)
 "cPu" = (
-/obj/structure/chair,
+/obj/structure/closet,
+/obj/effect/spawner/lootdrop/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
 "cPv" = (
@@ -81210,8 +81211,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/asmaint2)
 "dbh" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/aft)
@@ -89543,6 +89546,10 @@
 	},
 /turf/simulated/floor/engine,
 /area/engine/engineering)
+"jtR" = (
+/obj/effect/spawner/window/reinforced,
+/turf/simulated/wall,
+/area/maintenance/aft)
 "jve" = (
 /obj/effect/decal/warning_stripes/east,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -89660,8 +89667,8 @@
 	},
 /obj/effect/spawner/window/reinforced,
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -89906,6 +89913,10 @@
 	},
 /turf/simulated/wall/r_wall,
 /area/engine/engineering)
+"mwZ" = (
+/obj/structure/table,
+/turf/simulated/floor/plating,
+/area/maintenance/aft)
 "mzv" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -90497,6 +90508,10 @@
 	},
 /turf/simulated/wall/r_wall,
 /area/engine/supermatter)
+"sNU" = (
+/obj/structure/chair,
+/turf/simulated/floor/plating,
+/area/maintenance/aft)
 "sPb" = (
 /obj/machinery/alarm{
 	pixel_y = 24
@@ -90560,6 +90575,24 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/wall/r_wall,
 /area/engine/engineering)
+"tvD" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0;
+	tag = ""
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8";
+	tag = ""
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/aft)
 "tDn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plasteel{
@@ -108926,8 +108959,8 @@ cFd
 aaa
 aaa
 aaa
-cJU
-aab
+aaa
+cLm
 aab
 cNF
 cNF
@@ -109183,8 +109216,8 @@ cEW
 cFV
 cFV
 cFV
-cJS
-ayi
+cFV
+cLp
 aab
 cpz
 cMB
@@ -109437,11 +109470,11 @@ cBc
 cCB
 cDZ
 cEW
-cFW
-cFW
+cIG
 cII
+cFW
+cIK
 cEW
-aaa
 aab
 cNM
 cNM
@@ -109697,8 +109730,8 @@ cEW
 cFX
 cFX
 cFX
+cFX
 cEW
-ayi
 aab
 aaa
 aaa
@@ -109953,14 +109986,14 @@ cDO
 cEW
 cGe
 cFX
-cIG
+cFX
+cIM
 cEW
 ayi
 aab
 aaa
 ayi
 aab
-aaa
 aaa
 aaa
 cyO
@@ -110211,6 +110244,7 @@ cEW
 cFX
 cFX
 cFX
+cFX
 cEW
 cLi
 cLi
@@ -110218,7 +110252,6 @@ cLi
 cLi
 cLi
 cLi
-aaa
 aaa
 cPI
 aaa
@@ -110467,15 +110500,15 @@ cAF
 cHE
 cGf
 cGf
+cIJ
 cGf
-cMq
 cJn
+cMq
 cLi
-cNA
+cNC
 cNB
-cMr
+cND
 cLi
-aaa
 aaa
 cPG
 aaa
@@ -110724,15 +110757,15 @@ cqB
 cEY
 cFW
 cFW
-cIJ
+cFW
+cJS
 cEY
-cLm
 dbh
+cNA
 cNB
 cNB
-cPu
+sNU
 cOx
-aaa
 aaa
 cPG
 aaa
@@ -110981,15 +111014,15 @@ cgQ
 cEY
 cEw
 cFX
-cIM
+cFX
+cJU
 cEY
-cLm
+dbh
 cLi
-cNC
+cPu
 cNB
-cND
+mwZ
 cLi
-aaa
 aaa
 cPG
 aaa
@@ -111238,15 +111271,15 @@ cqz
 cEY
 cEv
 cFX
-cIK
+cFX
+cKa
 cEY
-cLm
+dbh
 cLi
 cLi
 cLi
 cLi
 cLi
-aaa
 aaa
 cPG
 aaa
@@ -111496,12 +111529,12 @@ cEW
 cEI
 cFL
 cGC
+cFX
 cEY
-cLp
 cMr
 cND
+mwZ
 cLi
-aaa
 aaa
 aaa
 aaa
@@ -111753,14 +111786,14 @@ cEW
 cFX
 cFK
 cFX
-cKa
+cFX
 cLo
 cMv
 cNN
 cOw
+jtR
 aab
 aab
-aaa
 aaa
 cQa
 aaa
@@ -112010,12 +112043,12 @@ cEW
 cHB
 cFN
 cHB
+cHB
 cEY
 cEY
-cEY
-cLm
+cNB
+dbh
 cOx
-aaa
 aab
 aaa
 cRz
@@ -112270,9 +112303,9 @@ cGD
 cJV
 bTm
 cEY
-cLm
+cNB
+dbh
 cLi
-aaa
 aaa
 aab
 cRz
@@ -112527,9 +112560,9 @@ cGF
 cJV
 cLr
 cEY
-cLm
+cNB
+dbh
 cLi
-aaa
 aab
 cRz
 cRz
@@ -112784,9 +112817,9 @@ cGE
 cJV
 cGh
 cEY
-cLm
+cNB
+dbh
 cOx
-aaa
 aaa
 cRA
 cSR
@@ -113041,9 +113074,9 @@ cJX
 cJW
 cLt
 cEY
-cLm
+cNB
+dbh
 cOx
-aaa
 aab
 cRA
 cTa
@@ -113298,9 +113331,9 @@ cGG
 cHC
 cLs
 cEY
-cLm
+cNB
+dbh
 cLi
-aab
 aab
 cRA
 cST
@@ -113555,9 +113588,9 @@ cGI
 cKd
 cLu
 cEY
-cLm
+cNB
+dbh
 cLi
-aaa
 aaa
 cRA
 cRA
@@ -113812,9 +113845,9 @@ cGH
 cEY
 cEY
 cEY
-cLm
+cNB
+dbh
 cOx
-aaa
 aaa
 cQy
 cTb
@@ -114069,8 +114102,8 @@ cnA
 cJZ
 cLy
 cLi
-cLm
-cOx
+cNB
+dbh
 cOx
 cQy
 cRB
@@ -114326,8 +114359,8 @@ cGM
 cOs
 cIP
 cIP
-cKJ
 cIP
+tvD
 cIP
 cOq
 cIP
